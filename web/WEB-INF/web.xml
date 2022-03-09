@@ -1,46 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	 version="3.1">
-    
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <!--welcomelist to define welcome page-->
     <welcome-file-list>
         <welcome-file>welcome.html</welcome-file>
     </welcome-file-list>
-    
     <!--servlet declaration-->
     <servlet>
         <servlet-name>myServlet</servlet-name>
         <servlet-class>com.practice.myServlet</servlet-class>
     </servlet>
-    
     <servlet>
         <servlet-name>RegistrationServlet</servlet-name>
         <servlet-class>com.practice.RegistrationServlet</servlet-class>
     </servlet>
-    
     <servlet>
         <servlet-name>SuccessServlet</servlet-name>
         <servlet-class>com.practice.SuccessServlet</servlet-class>
     </servlet>
     
+    <servlet>
+        <servlet-name>s1</servlet-name>
+        <servlet-class>com.attr.s1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>com.attr.s2</servlet-class>
+    </servlet>
+    
     <!--servlet mapping-->
+    
     <servlet-mapping>
         <servlet-name>myServlet</servlet-name>
         <url-pattern>/myServlet</url-pattern>
     </servlet-mapping>
-    
     <servlet-mapping>
         <servlet-name>RegistrationServlet</servlet-name>
         <url-pattern>/RegistrationServlet</url-pattern>
     </servlet-mapping>
-    
     <servlet-mapping>
         <servlet-name>SuccessServlet</servlet-name>
         <url-pattern>/success</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+    
+    <!--session configuration-->
     
     <session-config>
         <session-timeout>
