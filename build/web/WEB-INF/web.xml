@@ -17,7 +17,6 @@
         <servlet-name>SuccessServlet</servlet-name>
         <servlet-class>com.practice.SuccessServlet</servlet-class>
     </servlet>
-    
     <servlet>
         <servlet-name>s1</servlet-name>
         <servlet-class>com.attr.s1</servlet-class>
@@ -26,6 +25,15 @@
         <servlet-name>s2</servlet-name>
         <servlet-class>com.attr.s2</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>sessionServlet</servlet-name>
+        <servlet-class>com.attr.sessionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sessionServlet2</servlet-name>
+        <servlet-class>com.attr.sessionServlet2</servlet-class>
+    </servlet>
+    
     
     <!--servlet mapping-->
     
@@ -48,6 +56,14 @@
     <servlet-mapping>
         <servlet-name>s2</servlet-name>
         <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sessionServlet</servlet-name>
+        <url-pattern>/sessionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sessionServlet2</servlet-name>
+        <url-pattern>/sessionServlet2</url-pattern>
     </servlet-mapping>
     
     <!--session configuration-->
